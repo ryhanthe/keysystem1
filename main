@@ -1,0 +1,165 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local scrimsGUI = Instance.new("ScreenGui")
+local mainframe = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local TopPanel = Instance.new("ImageLabel")
+local Logo = Instance.new("ImageLabel")
+local Title = Instance.new("TextLabel")
+local Title2 = Instance.new("TextLabel")
+local HomeTab = Instance.new("TextButton")
+local botsetTab = Instance.new("TextButton")
+local VisualTab = Instance.new("TextButton")
+local SettingsTab = Instance.new("TextButton")
+
+--Properties:
+
+scrimsGUI.Name = "scrimsGUI"
+scrimsGUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+mainframe.Name = "mainframe"
+mainframe.Parent = scrimsGUI
+mainframe.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+mainframe.BorderColor3 = Color3.fromRGB(0, 0, 0)
+mainframe.BorderSizePixel = 0
+mainframe.Position = UDim2.new(0.33066994, 0, 0.283950627, 0)
+mainframe.Size = UDim2.new(0, 550, 0, 350)
+mainframe.Visible = false
+
+UICorner.CornerRadius = UDim.new(0, 12)
+UICorner.Parent = mainframe
+
+TopPanel.Name = "TopPanel"
+TopPanel.Parent = mainframe
+TopPanel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TopPanel.BackgroundTransparency = 1.000
+TopPanel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TopPanel.BorderSizePixel = 0
+TopPanel.Size = UDim2.new(0, 550, 0, 31)
+TopPanel.Image = "rbxassetid://14929262929"
+
+Logo.Name = "Logo"
+Logo.Parent = mainframe
+Logo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Logo.BackgroundTransparency = 1.000
+Logo.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Logo.BorderSizePixel = 0
+Logo.Position = UDim2.new(0.0199999996, 0, 0.00857142825, 0)
+Logo.Size = UDim2.new(0, 25, 0, 25)
+Logo.Image = "rbxassetid://12889323639"
+
+Title.Name = "Title"
+Title.Parent = mainframe
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(0.103636362, 0, 0, 0)
+Title.Size = UDim2.new(0, 40, 0, 31)
+Title.Font = Enum.Font.Arcade
+Title.Text = "SC"
+Title.TextColor3 = Color3.fromRGB(74, 74, 74)
+Title.TextSize = 20.000
+Title.TextStrokeTransparency = 0.000
+
+Title2.Name = "Title2"
+Title2.Parent = mainframe
+Title2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title2.BackgroundTransparency = 1.000
+Title2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title2.BorderSizePixel = 0
+Title2.Position = UDim2.new(0.165454552, 0, 0, 0)
+Title2.Size = UDim2.new(0, 47, 0, 31)
+Title2.Font = Enum.Font.Arcade
+Title2.Text = "RIMS"
+Title2.TextColor3 = Color3.fromRGB(255, 0, 0)
+Title2.TextSize = 20.000
+Title2.TextStrokeTransparency = 0.000
+
+HomeTab.Name = "HomeTab"
+HomeTab.Parent = mainframe
+HomeTab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HomeTab.BackgroundTransparency = 1.000
+HomeTab.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HomeTab.BorderSizePixel = 0
+HomeTab.Position = UDim2.new(0, 0, 0.0885714293, 0)
+HomeTab.Size = UDim2.new(0, 137, 0, 27)
+HomeTab.Visible = false
+HomeTab.Font = Enum.Font.Arcade
+HomeTab.Text = "Main"
+HomeTab.TextColor3 = Color3.fromRGB(255, 255, 255)
+HomeTab.TextSize = 18.000
+HomeTab.TextStrokeTransparency = 0.000
+
+botsetTab.Name = "botsetTab"
+botsetTab.Parent = mainframe
+botsetTab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+botsetTab.BackgroundTransparency = 1.000
+botsetTab.BorderColor3 = Color3.fromRGB(0, 0, 0)
+botsetTab.BorderSizePixel = 0
+botsetTab.Position = UDim2.new(0.74727273, 0, 0.0885714293, 0)
+botsetTab.Size = UDim2.new(0, 139, 0, 27)
+botsetTab.Visible = false
+botsetTab.Font = Enum.Font.Arcade
+botsetTab.Text = "BotSet"
+botsetTab.TextColor3 = Color3.fromRGB(255, 255, 255)
+botsetTab.TextSize = 18.000
+botsetTab.TextStrokeTransparency = 0.000
+
+VisualTab.Name = "VisualTab"
+VisualTab.Parent = mainframe
+VisualTab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VisualTab.BackgroundTransparency = 1.000
+VisualTab.BorderColor3 = Color3.fromRGB(0, 0, 0)
+VisualTab.BorderSizePixel = 0
+VisualTab.Position = UDim2.new(0.24909091, 0, 0.0885714293, 0)
+VisualTab.Size = UDim2.new(0, 137, 0, 27)
+VisualTab.Visible = false
+VisualTab.Font = Enum.Font.Arcade
+VisualTab.Text = "Visual"
+VisualTab.TextColor3 = Color3.fromRGB(255, 255, 255)
+VisualTab.TextSize = 18.000
+VisualTab.TextStrokeTransparency = 0.000
+
+SettingsTab.Name = "SettingsTab"
+SettingsTab.Parent = mainframe
+SettingsTab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SettingsTab.BackgroundTransparency = 1.000
+SettingsTab.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SettingsTab.BorderSizePixel = 0
+SettingsTab.Position = UDim2.new(0.49818182, 0, 0.0885714293, 0)
+SettingsTab.Size = UDim2.new(0, 137, 0, 27)
+SettingsTab.Visible = false
+SettingsTab.Font = Enum.Font.Arcade
+SettingsTab.Text = "Settings"
+SettingsTab.TextColor3 = Color3.fromRGB(255, 255, 255)
+SettingsTab.TextSize = 18.000
+SettingsTab.TextStrokeTransparency = 0.000
+
+-- Scripts:
+
+local function IZBDADQ_fake_script() -- scrimsGUI.dragable 
+	local script = Instance.new('Script', scrimsGUI)
+
+	frame = script.Parent.mainframe
+	frame.Draggable = true
+	frame.Active = true
+	frame.Selectable = true
+end
+coroutine.wrap(IZBDADQ_fake_script)()
+local function WMWBL_fake_script() -- scrimsGUI.toggle 
+	local script = Instance.new('LocalScript', scrimsGUI)
+
+	local UserInputService = game:GetService("UserInputService")
+	local Frame = script.Parent.mainframe
+	
+	UserInputService.InputBegan:Connect(function(input,gameProccesedEvent)
+		if input.KeyCode == Enum.KeyCode.Insert then 
+			Frame.Visible = not Frame.Visible
+		end
+	end)
+end
+coroutine.wrap(WMWBL_fake_script)()
